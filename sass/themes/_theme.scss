@@ -1,0 +1,100 @@
+header {
+    ul.submenu {
+        a {
+            color: #f9fafe;
+        }
+    }
+    h1, .h1-desc {
+        color: #f9fafe;
+    }
+    input {
+        color: black;
+    }
+    button {
+        color: #ffffff;
+        background-color: #e7434e;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: #717171;
+}
+
+:-moz-placeholder {
+    color: #717171;
+}
+
+:-ms-input-placeholder {
+    color: #717171;
+}
+
+h2 {
+    color: #343435;
+}
+
+.h2-desc {
+    color: #717171;
+}
+
+.section-explore-destinations {
+    .statistics-block {
+        background-color: #ffffff;
+    }
+    .ships-amount {
+        background-color: #e7434e;
+        color: #ffffff;
+    }
+    h3, .h3-desc {
+        color: #ffffff;
+    }
+}
+
+.section-boat {
+    h2, .h2-desc {
+        color: #f9fafe;
+    }
+    .button {
+        &:hover a {
+            border: 1px solid #ffffff;
+            background: transparent;
+        }
+        a {
+            background-color: #e7434e;
+            color: #ffffff;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+.section-featured-boats {
+    .ships-amount {
+        background-color: #e7434e;
+        color: #ffffff;
+    }
+    .h3-block {
+        color: #ffffff;
+        a {
+            color: #ffffff;
+        }
+    }
+}
+
+footer {
+    background-color: #404040;
+    color: #ffffff;
+    input {
+        color: black;
+    }
+    button {
+        color: #ffffff;
+        background-color: #e7434e;
+    }
+    .social {
+        li {
+            a {
+                background-color: #717171;
+                color: #ffffff;
+            }
+        }
+    }
+}

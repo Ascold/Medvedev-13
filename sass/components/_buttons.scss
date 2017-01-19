@@ -1,0 +1,22 @@
+.button {
+    display: inline-block;
+    margin: 0 auto;
+    &:hover a {
+        color: #ffffff;
+        background-color: #e7434e;
+        border: 1px solid transparent;
+        transition: 0.3s;
+    }
+    a {
+        text-decoration: none;
+        display: inline-block;
+        font-family: $font-stack-secondary;
+        font-size: 14px;
+        font-weight: 700;
+        color: #343434;
+        text-transform: uppercase;
+        padding: 19px 49px;
+        border: 1px solid rgba(38, 38, 38, 0.3);
+        border-radius: 5px;
+    }
+}

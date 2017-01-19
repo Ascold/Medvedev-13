@@ -4,21 +4,265 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://use.fontawesome.com/6eebe0124d.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
 </head>
 <body>
 <header>
-
+    <div class="container-wrap">
+        <ul class="topnav clearfix" id="myTopnav">
+            <li><a href="#"><img src="images/nava-logo.png"></a></li>
+            <li>
+                <ul class="submenu clearfix">
+                    <li><a href="#">TOP DESTINATIONS</a></li>
+                    <li><a href="#">ADD YOUR BOAT</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </li>
+            <li class="icon" id="nav-icon">
+                <a href="#" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
+        <h1>RESERVE A BOAT NOW!</h1>
+        <div class="h1-desc">and set your sails into paradise!</div>
+        <form class="clearfix" action="#" method="post" name="header-form">
+            <input type="text" name="find-a-boat" id="find-boat" placeholder="What is your DESTINATION, SAILOR?">
+            <button name="find-a-boat-button">FIND A BOAT</button>
+        </form>
+    </div>
 </header>
 <main>
-
+    <section class="section-explore-destinations">
+        <div class="container-wrap clearfix">
+            <div class="statistics-block">
+                <div class="statistics-inner">
+                    <div class="count">2,300</div>
+                    <div class="count-desc">Destinations</div>
+                </div>
+                <div class="statistics-inner">
+                    <div class="count">1,000</div>
+                    <div class="count-desc">Cities</div>
+                </div>
+                <div class="statistics-inner">
+                    <div class="count">35,000</div>
+                    <div class="count-desc">Boats</div>
+                </div>
+                <div class="statistics-inner">
+                    <div class="count">50,000</div>
+                    <div class="count-desc">Sailors</div>
+                </div>
+            </div>
+            <h2>EXPLORE OUR TOP DESTINATIONS</h2>
+            <div class="h2-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+            </div>
+            <div class="port-block">
+                <div class="port-block-inner first">
+                    <a href="#">
+                        <img src="images/figueira.png">
+                        <div class="ships-amount">730</div>
+                        <div class="h3-block">
+                            <h3>Figueira da Foz</h3>
+                            <div class="h3-desc">Portugal</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="port-block-inner">
+                    <a href="#">
+                        <img src="images/ibiza.png">
+                        <div class="ships-amount">621</div>
+                        <div class="h3-block">
+                            <h3>Ibiza</h3>
+                            <div class="h3-desc">Spain</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="port-block-inner">
+                    <a href="#">
+                        <img src="images/palma.png">
+                        <div class="ships-amount">543</div>
+                        <div class="h3-block">
+                            <h3>Palma de Mallorca</h3>
+                            <div class="h3-desc">Spain</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="port-block-inner">
+                    <a href="#">
+                        <img src="images/portofino.png">
+                        <div class="ships-amount">495</div>
+                        <div class="h3-block">
+                            <h3>Portofino</h3>
+                            <div class="h3-desc">Italy</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="port-block-inner">
+                    <a href="#">
+                        <img src="images/hercules.png">
+                        <div class="ships-amount">402</div>
+                        <div class="h3-block">
+                            <h3>Port Hercules</h3>
+                            <div class="h3-desc">Monaco</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#">EXPLORE MORE DESTINATIONS</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-boat">
+        <div class="container-wrap">
+            <h2>HAVE YOUR OWN BOAT?</h2>
+            <div class="h2-desc">navigare necesse est, vivere non est necesse</div>
+            <div class="button">
+                <a href="#">Make money with your boat</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-featured-boats">
+        <div class="container-wrap">
+            <h2>EXPLORE OUR TOP DESTINATIONS</h2>
+            <div class="h2-desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et
+            </div>
+            <div class="ships-block-wrap">
+                <div class="ship-block-inner">
+                    <a href="#">
+                        <img src="images/delphia.png">
+                    </a>
+                    <div class="ships-amount">€580 / day</div>
+                    <div class="h3-block">
+                        <h3>Delphia 47</h3>
+                        <a href="#">
+                            <div class="location-icon"></div>
+                            <div class="ship-location">Gdańsk, Poland</div>
+                        </a>
+                        <div class="berths-icon"></div>
+                        <div class="berths">8 Berths</div>
+                    </div>
+                </div>
+                <div class="ship-block-inner">
+                    <a href="#">
+                        <img src="images/sense.png">
+                    </a>
+                    <div class="ships-amount">€950 / day</div>
+                    <div class="h3-block">
+                        <h3>Sense 55</h3>
+                        <a href="#">
+                            <div class="location-icon"></div>
+                            <div class="ship-location">Portofino, Italy</div>
+                        </a>
+                        <div class="berths-icon"></div>
+                        <div class="berths">12 Berths</div>
+                    </div>
+                </div>
+                <div class="ship-block-inner">
+                    <a href="#">
+                        <img src="images/crusier.png">
+                    </a>
+                    <div class="ships-amount">€820 / day</div>
+                    <div class="h3-block">
+                        <h3>Crusier 51</h3>
+                        <a href="#">
+                            <div class="location-icon"></div>
+                            <div class="ship-location">Palma de Mallorca, Spain</div>
+                        </a>
+                        <div class="berths-icon"></div>
+                        <div class="berths">10 Berths</div>
+                    </div>
+                </div>
+                <div class="ship-block-inner">
+                    <a href="#">
+                        <img src="images/crusier-41s.png">
+                    </a>
+                    <div class="ships-amount">€400 / day</div>
+                    <div class="h3-block">
+                        <h3>Crusier 41S</h3>
+                        <a href="#">
+                            <div class="location-icon"></div>
+                            <div class="ship-location">Lisbon, Portugal</div>
+                        </a>
+                        <div class="berths-icon"></div>
+                        <div class="berths">8 Berths</div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <a href="#">LOAD MORE BOATS</a>
+            </div>
+        </div>
+    </section>
 </main>
 <footer>
-
+    <div class="line-upon-footer"></div>
+    <div class="container-wrap">
+        <div class="footer-wrap">
+            <div class="footer-inner">
+                <div class="footer-title">TOP LOCATIONS</div>
+                <ul class="footer-column">
+                    <li>Lorem ipsum dolor</li>
+                    <li>Sit amet consectetur</li>
+                    <li>Adipisicing elit</li>
+                    <li>Eiusmod tempor</li>
+                    <li>Incididunt ut labore</li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <div class="footer-title">FEATURED BOATS</div>
+                <ul class="footer-column">
+                    <li>Lorem ipsum dolor</li>
+                    <li>Sit amet consectetur</li>
+                    <li>Adipisicing elit</li>
+                    <li>Eiusmod tempor</li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <div class="footer-title">SUBSCRIBE TO OUR NEWSLETTER</div>
+                <form class="clearfix" action="#" method="post" name="footer-form">
+                    <input type="text" name="email" id="e-mail" placeholder="Your email adress">
+                    <button name="email-button">SUBSCRIBE</button>
+                </form>
+                <ul class="social clearfix">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <div class="footer-title">CONTACT US</div>
+                <ul class="footer-column">
+                    <li>Lorem ipsum dolor</li>
+                    <li>Sit amet consectetur</li>
+                    <li>Adipisicing elit</li>
+                    <li>Eiusmod tempor</li>
+                    <li>Incididunt ut labore</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
 <script
         src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

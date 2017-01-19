@@ -1,0 +1,170 @@
+.section-explore-destinations {
+    text-align: center;
+    padding-bottom: 80px;
+    .statistics-block {
+        margin: -70px auto 106px;
+        padding: 32px 0 40px;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1200px;
+        box-shadow: 0 0 30px rgba(52, 52, 52, 0.15);
+        border-radius: 5px;
+        .statistics-inner {
+            width: 25%;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 80px;
+                background-color: #717171;
+                opacity: 0.3;
+                padding: 30px 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            &:last-child::after {
+                display: none;
+            }
+            .count {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    h2 {
+        margin-bottom: 22px;
+    }
+    .port-block {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1200px;
+        margin: 65px auto 83px;
+    }
+    .port-block-inner {
+        width: 33.33%;
+        position: relative;
+        padding: 15px;
+        &:first-child {
+            width: 66.66%;
+        }
+        .ships-amount {
+            position: absolute;
+            top: 45px;
+            left: 42px;
+            padding: 11px 12px 11px 42px;
+            border-radius: 5px;
+            background: url("../images/sailboat-icon.png") no-repeat 13px 12px #e7434e;
+        }
+        .h3-block {
+            position: absolute;
+            left: 43px;
+            bottom: 42px;
+            text-align: left;
+        }
+        a {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.section-boat {
+    padding: 174px 0 159px;
+    background: url("../images/back-2.png") no-repeat top;
+    background-size: cover;
+    text-align: center;
+    .h2-desc {
+        margin: 6px 0 82px;
+        text-transform: uppercase;
+    }
+    .button {
+        &:hover a {
+            border: 1px solid #ffffff;
+        }
+        a {
+            border: 1px solid transparent;
+            padding: 19px 50px
+        }
+    }
+}
+
+.section-featured-boats {
+    padding: 96px 0 87px;
+    text-align: center;
+    h2 {
+        margin-bottom: 22px;
+    }
+    h3 {
+        margin-bottom: 14px;
+    }
+    .ships-block-wrap {
+        margin: 76px auto 85px;
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1204px
+    }
+    .ship-block-inner {
+        width: 50%;
+        position: relative;
+        padding: 15px 13px 15px 15px;
+        a {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .ships-amount {
+        position: absolute;
+        top: 45px;
+        left: 43px;
+        padding: 9px 10px 8px 11px;
+        border-radius: 5px;
+    }
+    .h3-block {
+        position: absolute;
+        left: 45px;
+        bottom: 42px;
+        text-align: left;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            &:hover .ship-location,
+            &:hover .location-icon {
+                text-decoration: underline;
+            }
+        }
+    }
+    .location-icon {
+        display: inline-block;
+        width: 13px;
+        height: 17px;
+        margin-right: 8px;
+        background: url("../images/map-marker.png") no-repeat center;
+    }
+    .ship-location {
+        display: inline-block;
+    }
+    .berths-icon {
+        display: inline-block;
+        width: 22px;
+        height: 14px;
+        margin: 0 9px 0 28px;
+        background: url("../images/account-multiple--1-.png") no-repeat center;
+    }
+    .berths {
+        display: inline-block;
+    }
+    .button {
+        a {
+            padding: 19px 52px
+        }
+    }
+}
