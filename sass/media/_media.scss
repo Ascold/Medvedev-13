@@ -1,0 +1,185 @@
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width: 840px) {
+    header {
+        ul.topnav > li:not(:first-child) {
+            display: none;
+        }
+        ul.topnav li.icon {
+            float: right;
+            display: inline-block;
+        }
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width: 840px) {
+    header {
+        ul.topnav.responsive {
+            position: relative;
+        }
+        ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        ul.topnav.responsive > li {
+            float: none;
+            display: inline;
+        }
+        ul.topnav.responsive li ul.submenu li {
+            text-align: left;
+            float: none;
+            margin-bottom: 10px;
+        }
+        ul.submenu {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 1524px) {
+    header {
+        .container-wrap {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .section-explore-destinations,
+    .section-boat,
+    .section-featured-boats {
+        .container-wrap {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    footer {
+        div.footer-inner {
+            width: 20%;
+            &:nth-child(2) {
+                padding-left: 0;
+            }
+            &:nth-child(3) {
+                width: 40%;
+                padding-left: 0;
+            }
+            &:nth-child(4) {
+                padding-left: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    footer {
+        div.footer-inner {
+            text-align: center;
+            width: 33%;
+            &:nth-child(1){
+                order:2;
+            }
+            &:nth-child(2) {
+                order: 3;
+            }
+            &:nth-child(3) {
+                width: 100%;
+                order: 1;
+            }
+            &:nth-child(4) {
+                padding-left: 0;
+                order: 4;
+            }
+        }
+        form {
+            margin: 0 auto;
+        }
+        .social {
+            margin: 36px auto;
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        h1 {
+            font-size: 60px;
+        }
+        .h1-desc {
+            font-size: 26px;
+        }
+    }
+    .section-explore-destinations {
+        li.port-block-inner {
+            width: 50%;
+            &:first-child {
+                width: 100%;
+            }
+        }
+    }
+    .section-boat {
+        h2 {
+            font-size: 60px;
+        }
+        .h2-desc {
+            font-size: 26px;
+        }
+    }
+    .section-featured-boats {
+        li.ship-block-inner {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 36px 0 250px;
+        h1 {
+            font-size: 50px;
+            margin: 150px 0 5px;
+        }
+        .h1-desc {
+            font-size: 20px;
+        }
+    }
+    .section-explore-destinations {
+        ul.statistics-block {
+            padding: 20px 0 20px;
+            li.statistics-inner {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #717171;
+                    opacity: 0.3;
+                    padding: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+                .count {
+                    font-size: 20px;
+                }
+                .count-desc {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .section-boat {
+        h2 {
+            font-size: 50px;
+        }
+        .h2-desc {
+            font-size: 20px;
+        }
+    }
+}

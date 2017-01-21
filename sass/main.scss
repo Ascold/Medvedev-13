@@ -1,6 +1,10 @@
-@import "normalize/import-now";
+@import "bootstrap-sprockets";
 
 @import 'utils/variables';
+
+@import "bootstrap";
+
+
 
 @import 'base/typography';
 
@@ -10,9 +14,9 @@
 
 @import 'components/buttons';
 
-@import 'pages/home';
-
 @import 'media/media';
+
+@import 'pages/home';
 
 @import 'themes/theme';
 
