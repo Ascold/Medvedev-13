@@ -9,6 +9,10 @@ footer {
         margin: 54px auto 0;
         padding: 0 15px;
         max-width: 1174px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         flex-flow: row wrap;
     }
@@ -63,6 +67,10 @@ footer {
             margin-right: 20px;
             float: left;
             a {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
                 display: flex;
                 width: 44px;
                 height: 44px;

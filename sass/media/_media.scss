@@ -78,8 +78,8 @@
         div.footer-inner {
             text-align: center;
             width: 33%;
-            &:nth-child(1){
-                order:2;
+            &:nth-child(1) {
+                order: 2;
             }
             &:nth-child(2) {
                 order: 3;
@@ -140,7 +140,7 @@
 
 @media (max-width: 800px) {
     header {
-        padding: 36px 0 250px;
+        padding: 36px 0 200px;
         h1 {
             font-size: 50px;
             margin: 150px 0 5px;
@@ -149,9 +149,11 @@
             font-size: 20px;
         }
     }
-    .section-explore-destinations {
+    section.section-explore-destinations {
+        padding-bottom: 50px;
         ul.statistics-block {
             padding: 20px 0 20px;
+            margin: -45px auto 80px;
             li.statistics-inner {
                 &::after {
                     content: "";
@@ -173,13 +175,242 @@
                 }
             }
         }
+        .port-block {
+            margin: 50px auto 50px;
+        }
     }
-    .section-boat {
+    section.section-boat {
+        padding: 80px 0 80px;
         h2 {
-            font-size: 50px;
+            font-size: 46px;
         }
         .h2-desc {
             font-size: 20px;
+        }
+    }
+    section.section-featured-boats {
+        padding: 50px 0 50px;
+        ul.ships-block-wrap {
+            margin: 30px auto 50px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .section-explore-destinations {
+        h3 {
+            font-size: 24px;
+        }
+        .h3-desc {
+            font-size: 16px;
+        }
+    }
+    .section-featured-boats {
+        h3 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        .container-wrap {
+            h1 {
+                font-size: 34px;
+            }
+            .h1-desc {
+                font-size: 16px;
+            }
+            form {
+                text-align: center;
+            }
+            input {
+                padding: 16px 0 16px 10px;
+            }
+            button {
+                float:none;
+                display: inline-block;
+                margin: 30px 0 0;
+                padding: 16px 0 16px 41px;
+                border-radius: 5px
+            }
+        }
+    }
+    section.section-explore-destinations {
+        h2 {
+            font-size: 20px;
+        }
+        .h2-desc {
+            font-size: 14px;
+        }
+        .port-block {
+            justify-content: center;
+            li.port-block-inner {
+                width: 70%;
+            }
+        }
+    }
+    section.section-boat {
+        h2 {
+            font-size: 36px;
+        }
+        .h2-desc {
+            font-size: 16px;
+        }
+    }
+    section.section-featured-boats {
+        h2 {
+            font-size: 20px;
+        }
+        .h2-desc {
+            font-size: 12px;
+        }
+    }
+    footer {
+        padding-bottom: 0;
+        div.footer-inner {
+            width: 100%;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(4) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    section.section-explore-destinations {
+        .port-block {
+            li.port-block-inner {
+                width: 80%;
+            }
+        }
+    }
+    footer {
+        form {
+            button {
+                float: none;
+                margin: 20px 0 0;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .section-explore-destinations,
+    .section-boat,
+    .section-featured-boats {
+        .container-wrap {
+            padding: 0;
+        }
+    }
+    header {
+        padding: 36px 0 100px;
+        h1 {
+            margin: 120px 0 5px;
+        }
+    }
+    section.section-explore-destinations {
+        ul.statistics-block {
+            padding: 0;
+            li.statistics-inner {
+                width: 50%;
+                padding: 20px 0;
+                &::after {
+                    display: none;
+                }
+                &:nth-child(1),
+                &:nth-child(2) {
+                    border-bottom: 1px solid #d4d4d4;
+                }
+                &:nth-child(1),
+                &:nth-child(3) {
+                    border-right: 1px solid #d4d4d4;
+                }
+            }
+        }
+        h2,
+        .h2-desc {
+            padding: 0 15px;
+        }
+        .port-block {
+            li.port-block-inner {
+                width: 90%;
+                .ships-amount {
+                    font-size: 14px;
+                }
+            }
+        }
+        div.button {
+            a {
+                padding: 14px 30px;
+                font-size: 12px;
+            }
+        }
+    }
+    section.section-boat {
+        h2,
+        .h2-desc {
+            padding: 0 15px;
+        }
+        div.button {
+            a {
+                padding: 14px 30px;
+                font-size: 12px;
+            }
+        }
+    }
+    section.section-featured-boats {
+        .ships-amount {
+            top: 30px;
+            left: 28px;
+            font-size: 14px;
+        }
+        .h3-block {
+            left: 30px;
+            bottom: 28px;
+            a {
+                display: inline-block;
+            }
+            h3 {
+                margin-bottom: 8px;
+            }
+        }
+        .berths-icon {
+            margin: 0 9px 0 10px;
+        }
+        .ship-location, .berths {
+            font-size: 14px;
+        }
+        div.button {
+            a {
+                padding: 14px 30px;
+                font-size: 12px;
+            }
+        }
+        h2,
+        .h2-desc {
+            padding: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    section.section-explore-destinations {
+        .port-block {
+            li.port-block-inner {
+                width: 100%;
+            }
+        }
+    }
+    section.section-boat {
+        h2 {
+            font-size: 30px;
+        }
+        .h2-desc {
+            font-size: 14px;
         }
     }
 }
